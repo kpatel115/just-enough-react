@@ -1,7 +1,7 @@
 import React, { useEffect} from 'react';
 
 
-const myNotes = () => {
+const MyNotes = () => {
   useEffect(() => {
     // update doc title
     document.title = 'My Notes - Notedly';
@@ -14,4 +14,4 @@ const myNotes = () => {
   )
 };
 
-export default myNotes
+export default MyNotes

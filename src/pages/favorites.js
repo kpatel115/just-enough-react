@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const favorites = () => {
+const Favorites = () => {
   useEffect(() => {
     // update doc title
     document.title = 'Favorites - Notedly';
@@ -13,4 +13,4 @@ const favorites = () => {
   )
 }
 
-export default favorites
+export default Favorites

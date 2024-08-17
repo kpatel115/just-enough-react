@@ -1,6 +1,7 @@
 import React from 'react'
+import
 
-const home = () => {
+const Home = () => {
   return (
     <div>
       <h1>Notedly</h1>
@@ -9,4 +10,4 @@ const home = () => {
   )
 }
 
-export default home
+export default Home
