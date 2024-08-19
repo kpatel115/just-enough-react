@@ -1,16 +1,31 @@
-import React from 'react';
-// import ReactDOM from 'react-dom';
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+/* Components */
+import Header from './components/Header';
+import Navbar from './components/Navbar';
 
-import Pages from './pages/index'
 
+/* Pages */
+import Home from './pages/home';
+import MyNotes from './pages/MyNotes';
+import Favorites from './pages/Favorites';
 
-function App() {
+/* Styling */
+import './App.css';
 
+const Pages = () => {
   return (
-    <div className='App'>
-      <Pages/>
-    </div>
-  );
+    <Router>
+      <Header/>
+      <Navbar/>
+
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/MyNotes" element={<MyNotes />} />
+          <Route path="/Favorites" element={<Favorites />} />
+      </Routes>
+    </Router>
+  )
 }
 
-export default App;
+export default Pages;
